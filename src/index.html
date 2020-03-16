@@ -4,20 +4,31 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <title>Sophie's Bootstrap Exercise File</title>
 
     <style>
 
+
+      .background-color{
+        background-color: #EBE1D7;
+
+      }
+
+
     h1 {
       margin-top: 20px;
       margin-bottom: 20px;
+      font-family: 'Roboto', sans-serif;
     
         }
 
      h2 {
       font-size: 1.8em; 
       margin-top: 20px;
+      font-family: 'Roboto', sans-serif;
     
         }
 
@@ -28,6 +39,10 @@
         max-height: 700px;
         
           }
+
+    h1, h2, h3, h4, h5, a, p, title {
+    font-family: 'Roboto', sans-serif;
+    } 
 
 
     #Heading_band_members{
@@ -47,6 +62,7 @@
        width: 100%;
        height: 200px;
        object-fit: cover;
+       border: 3px solid;
         }
 
         .model-content{
@@ -56,19 +72,37 @@
 
         }
 
+        .nav-link{
+        font-weight: bold;
+        text-decoration: underline;  
+        margin-right: 1ex; 
+
+        }
+
+        .Lyrics{
+          border: 2px solid;
+          padding: 20px; 
+          margin-top: 40px; 
+          overflow: scroll;
+          width: auto;
+          height: 200px; 
+          font-family: 'Bellota', cursive;
+
+        }
+
     </style>
   </head>
-  <body>
+  <body class="background-color">
 
 
     <div class="container">
 
       <header>
-        <h1> Sophie's Bootstrap Exercise <small class="text-muted"> The experiment Part I.</small>
+        <h1> Sophie's ABBA Exercise <small class="text-muted"> The experiment Part I.</small>
         </h1>
       </header>
 
-     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #AA928D;">
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #8277A1;">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -83,7 +117,7 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Did you know
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="https://abbasite.com/discography/">Fun facts</a>
@@ -94,8 +128,8 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-info my-3 my-sm-2" type="submit">Search</button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Abba search" aria-label="Abba search">
+            <button class="btn btn-info my-3 my-sm-2" type="submit">Let's go</button>
           </form>
         </div>
   </nav>
@@ -152,33 +186,7 @@
 
           </section>
 
-          <h3> <strong> A collection of ABBA photos </strong>
-
-          </h2>
-
-        <div id="ABBAphotos" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/ABBA_at_Rotterdam_colourised_1979.png/1578px-ABBA_at_Rotterdam_colourised_1979.png" class="d-block w-100" alt="ABBA_at_Rotterdam_colourised_1979">
-            </div>
-            <div class="carousel-item">
-              <img src="https://upload.wikimedia.org/wikipedia/en/7/73/ABBA_Last_Interveiw_-_Cavett.png" class="d-block w-100" alt="ABBA_concert">
-            </div>
-            <div class="carousel-item">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/ABBA_The_Museum_main_wax_statue.jpg" class="d-block w-100" alt="ABBA_The_Museum_main_wax_statue">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
-         <h3 id="Heading_band_members"> Abba band members</h3>
+          <h3 id="Heading_band_members"> Abba band members</h3>
 
         <section class="row">
 
@@ -223,21 +231,130 @@
                     </div>
           </section>
 
+          <h3> <bold> Great collection of ABBA photos </bold>
+
+          </h2>
+
+        <div id="ABBAphotos" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/ABBA_at_Rotterdam_colourised_1979.png/1578px-ABBA_at_Rotterdam_colourised_1979.png" class="d-block w-100" alt="ABBA_at_Rotterdam_colourised_1979">
+            </div>
+            <div class="carousel-item">
+              <img src="https://upload.wikimedia.org/wikipedia/en/7/73/ABBA_Last_Interveiw_-_Cavett.png" class="d-block w-100" alt="ABBA_concert">
+            </div>
+            <div class="carousel-item">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/ABBA_The_Museum_main_wax_statue.jpg" class="d-block w-100" alt="ABBA_The_Museum_main_wax_statue">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+         
+
+        <div class="Lyrics">
+          <h4> <strong> Lyrics to Voulez-vous </strong>
+            
+          </h4>
+
+          <p>
+                        People everywhere <br>
+                        A sense of expectation hanging in the air <br>
+                        Giving out a spark<br>
+                        Across the room your eyes are glowing in the dark<br>
+                        And here we go again, we know the start, we know the end<br>
+                        Masters of the scene<br>
+                        We've done it all before and now we're back to get some more<br>
+                        You know what I mean<br>
+                        Voulez-vous (ah-ha)<br>
+                        Take it now or leave it (ah-ha)<br>
+                        Now it's all we get (ah-ha)<br>
+                        Nothing promised, no regrets<br>
+                        Voulez-vous (ah-ha)<br>
+                        Ain't no big decision (ah-ha)<br>
+                        You know what to do (ah-ha)<br>
+                        La question c'est voulez-vous<br>
+                        Voulez-vous<br>
+                        I know what you think<br>
+                        The girl means business so I'll offer her a drink<br>
+                        Looking mighty proud<br>
+                        I see you leave your table, pushing through the crowd<br>
+                        I'm really glad you came, you know the rules, you know the game<br>
+                        Master of the scene<br>
+                        We've done it all before and now we're back to get some more<br>
+                        You know what I mean<br>
+                        Voulez-vous (ah-ha)<br>
+                        Take it now or leave it (ah-ha)<br>
+                        Now it's all we get (ah-ha)<br>
+                        Nothing promised, no regrets<br>
+                        Voulez-vous (ah-ha)<br>
+                        Ain't no big decision (ah-ha)<br>
+                        You know what to do (ah-ha)<br>
+                        La question c'est voulez-vous<br>
+                        And here we go again, we know the start, we know the end<br>
+                        Masters of the scene<br>
+                        We've done it all before and now we're back to get some more<br>
+                        You know what I mean<br>
+                        Voulez-vous (ah-ha)<br>
+                        Take it now or leave it (ah-ha)<br>
+                        Now it's all we get (ah-ha)<br>
+                        Nothing promised, no regrets<br>
+                        Voulez-vous (ah-ha)<br>
+                        Ain't no big decision (ah-ha)<br>
+                        You know what to do (ah-ha)<br>
+                        La question c'est voulez-vous<br>
+                        Voulez-vous<br>
+                        Voulez-vous (ah-ha ah-ha, ah-ha)<br>
+                        Voulez-vous (ah-ha ah-ha, ah-ha)<br>
+                        Voulez-vous (ah-ha ah-ha, ah-ha)<br>
+                        Voulez-vous (ah-ha ah-ha, ah-ha)<br>
+                        Voulez-vous (ah-ha)<br>
+                        Take it now or leave it (ah-ha)<br>
+                        Now it's all we get (ah-ha)<br>
+                        Nothing promised, no regrets<br>
+                        Voulez-vous (ah-ha)<br>
+                        Ain't no big decision (ah-ha)<br>
+                        You know what to do (ah-ha)<br>
+                        I can still say voulez-vous<br>
+                        Voulez-vous (ah-ha)<br>
+                        Take it now or leave it (ah-ha)<br>
+                        Now it's all we get (ah-ha)<br>
+                        Nothing promised, no regrets<br>
+                        Voulez-vous (ah-ha)<br>
+                        Ain't no big decision (ah-ha)<br>
+                        You know what to do (ah-ha)<br>
+                        I can still say voulez-vous<br>
+            
+
+          </p>
+
+        </div>
+
         <div id="VoulezVous_Video">
 
-          <h3> <strong> My favourite ABBA song</strong>
+          <h3> <strong> My favourite ABBA song ever</strong>
             
           </h3>
           <!-- 16:9 aspect ratio -->
           <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item"width="560" height="315" src="https://www.youtube.com/embed/za05HBtGsgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/za05HBtGsgU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            
+              </iframe>
           </div>
 
         </div>
       
 
-
       </section>
+
+    
 
 
     </div><!-- closes container -->
